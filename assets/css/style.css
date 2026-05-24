@@ -17,11 +17,12 @@
 
     grid-template-areas:
     "header header"
-    "sidebar productos";
+    "sidebar productos"
+    "footer footer";
 
     grid-template-columns: 220px 1fr;
 
-    grid-template-rows: 60px auto;
+    grid-template-rows: 60px auto 50px;
 
     min-height: 100vh;
 }
@@ -204,4 +205,25 @@ button:hover{
 
         grid-template-columns: 1fr;
     }
+}
+
+/* FOOTER */
+
+.footer{
+
+    grid-area: footer;
+
+    background-color: #f2f2f2;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: gray;
+
+    font-size: 14px;
+
+    padding: 15px;
 }
